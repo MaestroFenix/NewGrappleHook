@@ -562,18 +562,18 @@ bool CWeaponGrapple::ToggleHook( void )
  
 	if ( m_bHook )
 	{
-		m_bHook = false;
+		//m_bHook = false;
 		ClientPrint(pPlayer,HUD_PRINTCENTER, "Pull mode");
-		return m_bHook;
+		//return m_bHook;
 	}
 	else
 	{
-		m_bHook = true;
+		//m_bHook = true;
 		ClientPrint(pPlayer,HUD_PRINTCENTER, "Rappel mode");
-		return m_bHook;
+		//return m_bHook;
 	}
 	#endif
-	return m_bHook;
+	return !m_bHook;
 }
   
 //-----------------------------------------------------------------------------
